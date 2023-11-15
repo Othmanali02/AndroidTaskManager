@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+
+        android:layout_width="match_parent"
+        android:layout_height="300px"
+        android:background="#0C4160"
+        android:gravity="center"
+        android:text="Task Manager"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:id="@+id/welcomeText2"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="14dp"
+
+        android:gravity="left"
+        android:text="Create a Task"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:text="Name:"/>
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:hint="Enter Task Title"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:text="Status:"/>
+
+    <Switch
+        android:id="@+id/statusEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:hint="Enter Task Status (Leave UnChecked if its Done)" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="#FAD02C"
+        android:fontFamily="monospace"
+        android:onClick="btnSubmitTask"
+        android:text="Submit"
+        android:textColor="@color/black"
+        android:textFontWeight="900"
+        android:typeface="monospace" />
+</LinearLayout>
